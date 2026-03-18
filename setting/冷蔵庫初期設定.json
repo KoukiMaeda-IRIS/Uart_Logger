@@ -1,0 +1,236 @@
+{
+  "history_seconds": 120.0,
+  "show_hex_dump": false,
+  "sample_interval_value": 2.0,
+  "sample_interval_unit": "s",
+  "x_display_unit": "m",
+  "port": "COM4",
+  "baudrate": 9600,
+  "frame_size": 10,
+  "graph_group_names": [
+    "温度グループ",
+    "カウンタ類"
+  ],
+  "byte_rules": [
+    {
+      "enabled": false,
+      "name": "header0",
+      "method_id": "raw_u8",
+      "map_expr": "",
+      "map_label_expr": "",
+      "graph_enabled": false,
+      "graph_label": "",
+      "graph_unit": "",
+      "graph_group": 0,
+      "graph_group_name": "",
+      "bit_labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "enabled": false,
+      "name": "エラー",
+      "method_id": "bitfield",
+      "map_expr": "",
+      "map_label_expr": "",
+      "graph_enabled": true,
+      "graph_label": "",
+      "graph_unit": "",
+      "graph_group": 0,
+      "graph_group_name": "",
+      "bit_labels": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E0"
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "庫内温度",
+      "method_id": "signed_u8",
+      "map_expr": "",
+      "map_label_expr": "",
+      "graph_enabled": true,
+      "graph_label": "",
+      "graph_unit": "°C",
+      "graph_group": 0,
+      "graph_group_name": "温度グループ",
+      "bit_labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "基板温度",
+      "method_id": "signed_u8",
+      "map_expr": "",
+      "map_label_expr": "",
+      "graph_enabled": true,
+      "graph_label": "",
+      "graph_unit": "°C",
+      "graph_group": 0,
+      "graph_group_name": "温度グループ",
+      "bit_labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "設定温度",
+      "method_id": "signed_u8",
+      "map_expr": "",
+      "map_label_expr": "",
+      "graph_enabled": true,
+      "graph_label": "",
+      "graph_unit": "°C",
+      "graph_group": 0,
+      "graph_group_name": "温度グループ",
+      "bit_labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "モード",
+      "method_id": "map",
+      "map_expr": "",
+      "map_label_expr": "0:オート,1:ハイパワー,2:エコ",
+      "graph_enabled": true,
+      "graph_label": "",
+      "graph_unit": "",
+      "graph_group": 0,
+      "graph_group_name": "",
+      "bit_labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "オートモードサイクル時間",
+      "method_id": "raw_u8",
+      "map_expr": "",
+      "map_label_expr": "",
+      "graph_enabled": true,
+      "graph_label": "",
+      "graph_unit": "sec",
+      "graph_group": 0,
+      "graph_group_name": "カウンタ類",
+      "bit_labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "オートモードステップ",
+      "method_id": "raw_u8",
+      "map_expr": "",
+      "map_label_expr": "",
+      "graph_enabled": true,
+      "graph_label": "",
+      "graph_unit": "",
+      "graph_group": 0,
+      "graph_group_name": "",
+      "bit_labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "回転数",
+      "method_id": "map",
+      "map_expr": "",
+      "map_label_expr": "0:2000,57:2500,107:3000,156:3500,255:0",
+      "graph_enabled": true,
+      "graph_label": "",
+      "graph_unit": "RPM",
+      "graph_group": 0,
+      "graph_group_name": "",
+      "bit_labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "ONカウント",
+      "method_id": "raw_u8",
+      "map_expr": "",
+      "map_label_expr": "",
+      "graph_enabled": true,
+      "graph_label": "",
+      "graph_unit": "",
+      "graph_group": 0,
+      "graph_group_name": "カウンタ類",
+      "bit_labels": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+}
